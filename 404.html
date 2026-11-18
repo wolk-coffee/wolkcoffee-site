@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | WOLK Coffee &amp; Cakes</title><meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&display=swap"><style>
+/* Layout: a printed menu card. Mono label in the margin, serif content beside it,
+   prices set right. Hierarchy comes from space, never from colour. */
+:root{
+  --cream:#FAF6EE; --ink:#000000; --paper:#FFFFFF;
+  --display:"DM Serif Display",Georgia,"Times New Roman",serif;
+  --text:"DM Serif Text",Georgia,"Times New Roman",serif;
+  --mono:"DM Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --measure:40rem; --gutter:clamp(1rem,4vw,2rem);
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2.5rem; --s5:4rem;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--text);
+  font-size:1.0625rem;line-height:1.55}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.2em}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.wrap{max-width:62rem;margin-inline:auto;padding-inline:var(--gutter)}
+
+.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+  gap:var(--s2) var(--s4);padding-block:var(--s3)}
+.mark{display:block;color:var(--ink)}
+.mark svg{display:block;height:1.5rem;width:auto}
+.nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;margin:0;padding:0;list-style:none;
+  font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
+.nav a{display:inline-block;padding-block:.375rem;text-decoration:none;
+  border-bottom:1px solid transparent}
+.nav a:hover,.nav a[aria-current="page"]{border-bottom-color:var(--ink)}
+
+.hero{display:grid;gap:var(--s3);max-width:46rem;padding-block:var(--s5) var(--s4)}
+.eyebrow{margin:0;font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;
+  text-transform:uppercase}
+h1{margin:0;font-family:var(--display);font-weight:400;
+  font-size:clamp(2.25rem,7vw,4.25rem);line-height:1.02;text-wrap:balance}
+.lede{margin:0;max-width:var(--measure);font-size:1.1875rem}
+.status{margin:0;font-family:var(--mono);font-size:.8125rem}
+
+.row{display:grid;grid-template-columns:11rem minmax(0,1fr);gap:var(--s2) var(--s4);
+  padding-block:var(--s4);border-top:1px solid var(--ink)}
+.row>h2{margin:0;padding-top:.5rem;font-family:var(--mono);font-weight:500;
+  font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
+.body{display:grid;gap:var(--s2);min-width:0;max-width:var(--measure)}
+.body p{margin:0}
+.body h3{margin:0;font-family:var(--display);font-weight:400;font-size:1.625rem;
+  line-height:1.15;text-wrap:balance}
+.body h3:not(:first-child){margin-top:var(--s3)}
+@media (max-width:44rem){.row{grid-template-columns:minmax(0,1fr)}.row>h2{padding-top:0}}
+
+.menu{display:grid;gap:.875rem;margin:0;padding:0;list-style:none}
+.menu li{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:var(--s3);
+  align-items:baseline}
+.menu .n{font-size:1.125rem;line-height:1.3}
+.menu .p{font-family:var(--mono);font-size:.875rem;font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+.menu .d{grid-column:1/-1;font-family:var(--mono);font-size:.8125rem;line-height:1.5}
+.note,.more{font-family:var(--mono);font-size:.8125rem;line-height:1.5}
+.facts{display:grid;gap:.375rem;margin:0;padding:0;list-style:none}
+.qa{display:grid;gap:.375rem}
+.qa+.qa{margin-top:var(--s2)}
+.qa h3{font-size:1.3125rem}
+.qa h3:not(:first-child){margin-top:0}
+address{font-style:normal}
+
+.foot{margin-top:var(--s5);background:var(--ink);color:var(--cream)}
+.foot .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));
+  gap:var(--s4);padding-block:var(--s4)}
+.foot h2{margin:0 0 var(--s1);font-family:var(--mono);font-weight:500;font-size:.75rem;
+  letter-spacing:.1em;text-transform:uppercase}
+.foot p,.foot ul{margin:0;padding:0;list-style:none;font-size:.9375rem}
+.foot a:focus-visible,.dark a:focus-visible{outline-color:var(--cream)}
+[hidden]{display:none!important}
+
+/* home */
+.hero-home{grid-template-columns:minmax(0,1fr) minmax(9rem,16rem);align-items:end;
+  gap:var(--s4);max-width:none}
+.hero-home .t{display:grid;gap:var(--s3);min-width:0;max-width:46rem}
+.eye{display:block;width:100%;height:auto;color:var(--ink);overflow:visible}
+.eye .ray,.eye .ring{stroke-dasharray:1}
+.eye .pupil{transform-box:fill-box;transform-origin:center}
+@media (max-width:44rem){.hero-home{grid-template-columns:minmax(0,1fr);
+  padding-block:var(--s4)}.hero-home .art{order:-1;width:8.5rem}}
+
+.tick{overflow:hidden;background:var(--ink);color:var(--cream);padding-block:.875rem}
+.track{display:flex}
+.track p{margin:0;padding-inline:var(--gutter);font-family:var(--mono);font-size:.75rem;
+  letter-spacing:.12em;text-transform:uppercase;line-height:1.9}
+.track p+p{display:none}
+.track span::after{content:"·";margin-inline:1.25rem}
+
+.duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));
+  margin-top:var(--s5)}
+.panel{display:grid;gap:var(--s2);align-content:start;min-width:0;
+  padding:var(--s4) clamp(1.25rem,4vw,2.5rem);background:var(--paper);color:var(--ink)}
+.panel.dark{background:var(--ink);color:var(--cream)}
+.panel h2{margin:0;font-family:var(--display);font-weight:400;
+  font-size:clamp(2rem,5vw,3.25rem);line-height:1.05;text-wrap:balance}
+.panel p{margin:0}
+.tag{display:inline-block;margin-left:.5rem;padding:.0625rem .5rem;
+  border:1px solid currentColor;letter-spacing:.1em}
+.trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));
+  gap:var(--s4);margin-top:var(--s5)}
+.col{display:grid;gap:var(--s2);align-content:start;min-width:0;padding-top:var(--s3);
+  border-top:1px solid var(--ink)}
+.col h2{margin:0;font-family:var(--display);font-weight:400;font-size:2rem;line-height:1.1}
+.col p,.col address{margin:0}
+.more a::after{content:" →";display:inline-block;transition:transform .2s ease-out}
+.more a:hover::after{transform:translateX(.25rem)}
+
+.story{display:grid;grid-template-columns:minmax(0,1fr) minmax(18rem,28rem);
+  gap:0 var(--s5);align-items:start;margin-top:var(--s4)}
+.stage{position:sticky;top:max(1rem,calc(50vh - 14rem));order:2;aspect-ratio:1;
+  background:var(--paper);color:var(--ink);--sbg:var(--paper)}
+.stage.dark{background:var(--ink);color:var(--cream);--sbg:var(--ink)}
+.stage svg{display:block;width:100%;height:100%}
+.stage .gap,.stage .slice{fill:var(--sbg)}
+.stage text{font-family:var(--mono);font-size:11px;letter-spacing:.1em}
+.stage .cap{position:absolute;left:1rem;bottom:.875rem;margin:0;font-family:var(--mono);
+  font-size:.6875rem;letter-spacing:.1em;text-transform:uppercase;white-space:pre}
+.stage .bar{position:absolute;left:0;bottom:0;width:100%;height:2px;background:currentColor;
+  transform-origin:0 50%;transform:scaleX(var(--p,1))}
+.chapters{margin:0;padding:0;list-style:none;min-width:0}
+.ch{display:grid;gap:var(--s2);align-content:center;max-width:30rem;min-height:86vh}
+.ch h2{margin:0;font-family:var(--display);font-weight:400;
+  font-size:clamp(2.25rem,5.5vw,3.75rem);line-height:1.02;text-wrap:balance}
+.ch p,.ch address{margin:0}
+@media (max-width:52rem){
+  .story{grid-template-columns:minmax(0,1fr);margin-top:0}
+  .stage{order:0;top:env(safe-area-inset-top,0px);z-index:2;aspect-ratio:auto;
+    height:42vh;height:42svh;border-bottom:1px solid var(--ink)}
+  .stage.dark{border-bottom-color:var(--cream)}
+  .ch{align-content:start;min-height:66vh;min-height:66svh;padding-top:var(--s4)}
+}
+
+@media (prefers-reduced-motion:no-preference){
+  .stage{transition:background-color .45s ease,color .45s ease}
+  .eye .ring{animation:draw .9s cubic-bezier(.6,0,.2,1) backwards}
+  .eye .ring+.ring{animation-delay:.15s}
+  .eye .ray{animation:draw .7s cubic-bezier(.6,0,.2,1) backwards;
+    animation-delay:calc(.55s + var(--i)*.08s)}
+  .eye .pupil{animation:pop .5s cubic-bezier(.3,1.6,.5,1) .35s backwards,
+    blink 7s 3s infinite}
+  .eye .look{transition:transform .25s ease-out}
+  .hero-home .t>*{animation:rise .7s cubic-bezier(.2,.7,.2,1) backwards}
+  .hero-home .t>:nth-child(2){animation-delay:.08s}
+  .hero-home .t>:nth-child(3){animation-delay:.16s}
+  .hero-home .t>:nth-child(4){animation-delay:.24s}
+  .track{width:max-content;animation:tick 40s linear infinite}
+  .track p{padding-inline:0;white-space:nowrap}
+  .track p+p{display:block}
+  .tick:hover .track{animation-play-state:paused}
+}
+@media (prefers-reduced-motion:no-preference) and (hover:none){
+  .eye .look{animation:look 9s ease-in-out 2s infinite}
+}
+@keyframes draw{from{stroke-dashoffset:1}}
+@keyframes pop{from{transform:scale(0)}}
+@keyframes blink{0%,95%,100%{transform:scaleY(1)}97.5%{transform:scaleY(.06)}}
+@keyframes rise{from{opacity:0;transform:translateY(.75rem)}}
+@keyframes tick{to{transform:translateX(-50%)}}
+@keyframes look{0%,100%{transform:translate(0,0)}20%{transform:translate(-7px,2px)}
+  45%{transform:translate(6px,-3px)}70%{transform:translate(2px,6px)}}
+</style></head>
+<body><header class="wrap top"><a class="mark" href="/" aria-label="WOLK Coffee &amp; Cakes, home"><svg viewBox="10 212.5 147 36.5" aria-hidden="true" focusable="false"><g fill="currentColor"><polygon points="11.25,214.25 21.4,246.9 27.7,246.9 35.6,223.9 43.1,246.9 49.4,246.9 59.4,214.25 54.2,214.25 45.8,238.4 38.3,214.25 33.2,214.25 25.3,238.4 17.0,214.25"/><polygon points="101.25,214.25 107.25,214.25 107.25,241.7 123.1,241.7 123.1,246.9 101.25,246.9"/><polygon points="127.95,214.25 133.8,214.25 133.8,229.8 149.1,214.25 155.6,214.25 143.0,228.9 155.9,246.9 149.4,246.9 138.6,233.9 133.8,238.75 133.8,246.9 127.95,246.9"/><circle cx="78.68" cy="230.68" r="3.5"/></g><circle cx="78.68" cy="230.68" r="14.3" fill="none" stroke="currentColor" stroke-width="6"/></svg></a><nav aria-label="Main"><ul class="nav"><li><a href="/menu/">Menu</a></li><li><a href="/weekend-brunch/">Weekend Brunch</a></li><li><a href="/morning/">Morning</a></li><li><a href="/coffee/">Coffee</a></li><li><a href="/cakes/">Cakes</a></li><li><a href="/visit/">Visit</a></li></ul></nav></header><main class="wrap"><div class="hero"><p class="eyebrow">Page not found</p><h1>Nothing here.</h1><p class="lede">Try the <a href="/menu/">menu</a> or <a href="/visit/">find us</a> at 16 Hill Rise, Richmond.</p></div></main><footer class="foot"><div class="wrap">
+<div><h2>Visit</h2><address>WOLK Coffee &amp; Cakes<br>16 Hill Rise, Richmond<br>London TW10 6UA</address>
+<p><a href="https://maps.app.goo.gl/ysuKY3BTDd2YXBEr5">Google Maps</a></p></div>
+<div><h2>Hours</h2><p>Open every day, 7:30am–5:30pm</p>
+<p>Weekend brunch: Saturday &amp; Sunday, 8am–2pm</p></div>
+<div><h2>More</h2><ul>
+<li><a href="/faq/">FAQ</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="https://www.wolkcakes.co.uk/">Whole cakes: wolkcakes.co.uk</a></li>
+<li><a href="https://www.instagram.com/wolkcoffee.uk/">Instagram</a></li>
+<li><a href="mailto:info@wolkcoffee.com">info@wolkcoffee.com</a></li></ul></div>
+<div><h2>Istanbul</h2><p>WOLK Coffee &amp; More<br>Yeniköy, Sarıyer</p>
+<p>Born in Istanbul, Brewed in London.</p></div>
+</div></footer></body></html>
