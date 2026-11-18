@@ -73,6 +73,23 @@ address{font-style:normal}
   letter-spacing:.1em;text-transform:uppercase}
 .foot p,.foot ul{margin:0;padding:0;list-style:none;font-size:.9375rem}
 .foot a:focus-visible,.dark a:focus-visible{outline-color:var(--cream)}
+.btn{display:inline-block;padding:.8125rem 1.125rem;border:1px solid var(--ink);
+  background:var(--ink);color:var(--cream);font-family:var(--mono);font-size:.75rem;
+  letter-spacing:.08em;text-transform:uppercase;text-decoration:none;line-height:1.2;
+  transition:background-color .15s ease,color .15s ease}
+.btn:hover{background:var(--paper);color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--cream)}
+.ctas{display:flex;flex-wrap:wrap;gap:.75rem;margin:0}
+.top{row-gap:var(--s2)}
+.order{font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;
+  text-transform:uppercase;text-decoration:none;padding:.4375rem .75rem;
+  border:1px solid var(--ink);white-space:nowrap}
+.order:hover{background:var(--ink);color:var(--cream)}
+.navwrap{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s2) 1.5rem}
+@media (max-width:44rem){.top{display:grid;grid-template-columns:minmax(0,1fr) auto;
+  align-items:center}.navwrap{display:contents}.order{grid-column:2;grid-row:1}
+  .top nav{grid-column:1/-1}}
 [hidden]{display:none!important}
 
 /* home */
@@ -165,7 +182,7 @@ address{font-style:normal}
 @keyframes look{0%,100%{transform:translate(0,0)}20%{transform:translate(-7px,2px)}
   45%{transform:translate(6px,-3px)}70%{transform:translate(2px,6px)}}
 </style></head>
-<body><header class="wrap top"><a class="mark" href="/" aria-label="WOLK Coffee &amp; Cakes, home"><svg viewBox="10 212.5 147 36.5" aria-hidden="true" focusable="false"><g fill="currentColor"><polygon points="11.25,214.25 21.4,246.9 27.7,246.9 35.6,223.9 43.1,246.9 49.4,246.9 59.4,214.25 54.2,214.25 45.8,238.4 38.3,214.25 33.2,214.25 25.3,238.4 17.0,214.25"/><polygon points="101.25,214.25 107.25,214.25 107.25,241.7 123.1,241.7 123.1,246.9 101.25,246.9"/><polygon points="127.95,214.25 133.8,214.25 133.8,229.8 149.1,214.25 155.6,214.25 143.0,228.9 155.9,246.9 149.4,246.9 138.6,233.9 133.8,238.75 133.8,246.9 127.95,246.9"/><circle cx="78.68" cy="230.68" r="3.5"/></g><circle cx="78.68" cy="230.68" r="14.3" fill="none" stroke="currentColor" stroke-width="6"/></svg></a><nav aria-label="Main"><ul class="nav"><li><a href="/menu/">Menu</a></li><li><a href="/weekend-brunch/">Weekend Brunch</a></li><li><a href="/morning/">Morning</a></li><li><a href="/coffee/">Coffee</a></li><li><a href="/cakes/">Cakes</a></li><li><a href="/visit/">Visit</a></li></ul></nav></header><main class="wrap"><div class="hero"><p class="eyebrow">Page not found</p><h1>Nothing here.</h1><p class="lede">Try the <a href="/menu/">menu</a> or <a href="/visit/">find us</a> at 16 Hill Rise, Richmond.</p></div></main><footer class="foot"><div class="wrap">
+<body><header class="wrap top"><a class="mark" href="/" aria-label="WOLK Coffee &amp; Cakes, home"><svg viewBox="10 212.5 147 36.5" aria-hidden="true" focusable="false"><g fill="currentColor"><polygon points="11.25,214.25 21.4,246.9 27.7,246.9 35.6,223.9 43.1,246.9 49.4,246.9 59.4,214.25 54.2,214.25 45.8,238.4 38.3,214.25 33.2,214.25 25.3,238.4 17.0,214.25"/><polygon points="101.25,214.25 107.25,214.25 107.25,241.7 123.1,241.7 123.1,246.9 101.25,246.9"/><polygon points="127.95,214.25 133.8,214.25 133.8,229.8 149.1,214.25 155.6,214.25 143.0,228.9 155.9,246.9 149.4,246.9 138.6,233.9 133.8,238.75 133.8,246.9 127.95,246.9"/><circle cx="78.68" cy="230.68" r="3.5"/></g><circle cx="78.68" cy="230.68" r="14.3" fill="none" stroke="currentColor" stroke-width="6"/></svg></a><div class="navwrap"><nav aria-label="Main"><ul class="nav"><li><a href="/menu/">Menu</a></li><li><a href="/weekend-brunch/">Weekend Brunch</a></li><li><a href="/morning/">Morning</a></li><li><a href="/coffee/">Coffee</a></li><li><a href="/cakes/">Cakes</a></li><li><a href="/visit/">Visit</a></li></ul></nav><a class="order" href="https://www.wolkcakes.co.uk/?utm_source=wolkcoffee&amp;utm_medium=referral&amp;utm_campaign=site&amp;utm_content=header" target="_blank" rel="noopener">Order a cake<span aria-hidden="true"> ↗</span></a></div></header><main class="wrap"><div class="hero"><p class="eyebrow">Page not found</p><h1>Nothing here.</h1><p class="lede">Try the <a href="/menu/">menu</a> or <a href="/visit/">find us</a> at 16 Hill Rise, Richmond.</p></div></main><footer class="foot"><div class="wrap">
 <div><h2>Visit</h2><address>WOLK Coffee &amp; Cakes<br>16 Hill Rise, Richmond<br>London TW10 6UA</address>
 <p><a href="https://maps.app.goo.gl/ysuKY3BTDd2YXBEr5">Google Maps</a></p></div>
 <div><h2>Hours</h2><p>Open every day, 7:30am–5:30pm</p>
@@ -173,7 +190,7 @@ address{font-style:normal}
 <div><h2>More</h2><ul>
 <li><a href="/faq/">FAQ</a></li>
 <li><a href="/about/">About</a></li>
-<li><a href="https://www.wolkcakes.co.uk/">Whole cakes: wolkcakes.co.uk</a></li>
+<li><a href="https://www.wolkcakes.co.uk/?utm_source=wolkcoffee&amp;utm_medium=referral&amp;utm_campaign=site&amp;utm_content=footer">Whole cakes: wolkcakes.co.uk</a></li>
 <li><a href="https://www.instagram.com/wolkcoffee.uk/">Instagram</a></li>
 <li><a href="mailto:info@wolkcoffee.com">info@wolkcoffee.com</a></li></ul></div>
 <div><h2>Istanbul</h2><p>WOLK Coffee &amp; More<br>Yeniköy, Sarıyer</p>
